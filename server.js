@@ -1,4 +1,5 @@
-var port = parseInt(process.env.PORT) || 8089;
+//var port = parseInt(process.env.PORT) || 8089;
+var port = 8089;
 console.log('process.env.PORT: '+process.env.PORT);
 
 function authenticate1(whom, success, reason) {
@@ -1452,12 +1453,12 @@ var ContactListSchema = new Schema({
 	firstname	: String,
 	lastname	: String,
 	description	: String,
-	title		: String,// “President”
+	title		: String,// ï¿½Presidentï¿½
 	company		: String,
 	website		: String,
 	groups		: [],//groupId
 	addresses 	: [],
-	phone		: [],//array ofwork,cell “phones” : [{"work" : "202-555-1111"},{"cell" : "800-555-1212"}]
+	phone		: [],//array ofwork,cell ï¿½phonesï¿½ : [{"work" : "202-555-1111"},{"cell" : "800-555-1212"}]
 	contacts	: []//contact list of username
 });
 var ContactListModel = mongoose.model('ContactList', ContactListSchema);
